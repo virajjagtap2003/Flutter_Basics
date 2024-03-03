@@ -10,13 +10,13 @@ class BasicFlag extends StatelessWidget{
 
       ),
       body: SizedBox(
-        height: double.infinity,
+        height: double.infinity, // page center
         width: double.infinity,
 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize:MainAxisSize.min,
+          // mainAxisSize:MainAxisSize.min,
           children: [
             Container(
               height: 100,
