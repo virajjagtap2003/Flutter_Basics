@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget{
           width:double.infinity,
           color:Colors.yellow,
           child:Column(
-            mainAxisAlignment: MainAxisAlignment.center
+            mainAxisAlignment: MainAxisAlignment.center,
             //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Row(
