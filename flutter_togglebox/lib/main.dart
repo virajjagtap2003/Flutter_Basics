@@ -50,6 +50,7 @@ class _ToggleBoxState extends State<ToggleBox>{
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,// equal space
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   height: 100,
@@ -69,10 +70,12 @@ class _ToggleBoxState extends State<ToggleBox>{
                     }
                   });
                 },
-                child: const Text("Button 1"),
+                child: const Text("Button 1"), 
+                
                 )
               ],
             ),Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   height: 100,
@@ -94,6 +97,7 @@ class _ToggleBoxState extends State<ToggleBox>{
                   });
                 },
                   child: const Text("Button 2"),
+                  
                  )
               ],
             )
