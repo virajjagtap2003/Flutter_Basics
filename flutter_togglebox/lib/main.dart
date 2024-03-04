@@ -22,6 +22,23 @@ class ToggleBox extends StatefulWidget{
   }
 }
 class _ToggleBoxState extends State<ToggleBox>{
+  bool box1Color=false;
+  bool box2Color=false;
+
+  Color setBox1Color(){
+    if(box1Color==false){
+      return Colors.red;
+    }else{
+      return Colors.black;
+    }
+  }
+  Color setBox2Color(){
+    if(box2Color==false){
+      return Colors.blue;
+    }else{
+      return Colors.orange;
+    }
+  }
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
@@ -37,13 +54,21 @@ class _ToggleBoxState extends State<ToggleBox>{
                 Container(
                   height: 100,
                   width: 100,
-                  color: Colors.red,
+                  color:setBox1Color(),
 
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                ElevatedButton(onPressed: (){},
+                ElevatedButton(onPressed: (){
+                  setState(() {
+                    if(box1Color==false){
+                      box1Color=true;
+                    }else{
+                      box1Color=false;
+                    }
+                  });
+                },
                 child: const Text("Button 1"),
                 )
               ],
@@ -52,14 +77,22 @@ class _ToggleBoxState extends State<ToggleBox>{
                 Container(
                   height: 100,
                   width: 100,
-                  color: Colors.black,
+                  color: setBox2Color(),
 
                 ),
                 SizedBox(
                   height: 20,
 
                 ),
-                ElevatedButton(onPressed: (){},
+                ElevatedButton(onPressed: (){
+                  setState(() {
+                    if(box2Color==false){
+                      box2Color=true;
+                    }else{
+                      box2Color=false;
+                    }
+                  });
+                },
                   child: const Text("Button 2"),
                  )
               ],
