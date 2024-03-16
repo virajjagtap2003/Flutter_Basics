@@ -15,6 +15,7 @@ class TextFieldDemo extends StatefulWidget{
   State createState()=> _TextFieldDemoState();
 }
 class _TextFieldDemoState extends State{
+  TextEditingController namecontroller=TextEditingController();
   Widget build(BuildContext context){
       return Scaffold(
         appBar: AppBar(
@@ -27,14 +28,14 @@ class _TextFieldDemoState extends State{
           backgroundColor: Colors.black,
         ),
 
-        body: Column(
+        body: const Column(
           children: [
             SizedBox(
               height: 30,
             ),
 
             TextField(
-              showCursor: false,
+               //  showCursor: false,
               decoration:InputDecoration(border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(30),),
               ),
@@ -47,7 +48,14 @@ class _TextFieldDemoState extends State{
             SizedBox(
               height: 30,
             ),
-            TextField(),
+            TextField(
+              decoration: InputDecoration(border: OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(30),),
+
+              ),
+              hintText: "Enter Email Address",
+              ),
+            ),
           ],
         ),
       );
