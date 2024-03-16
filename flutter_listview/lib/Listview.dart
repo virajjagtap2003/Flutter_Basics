@@ -33,7 +33,7 @@ class _ListViewDemo extends State{
               height: 200,
               width: 200,
 
-              margin: const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10), // setting 10 on all sides of padding
               child: Image.network(
                 ImageList[index],
               ),
