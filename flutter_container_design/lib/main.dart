@@ -33,9 +33,8 @@ class MainApp extends StatelessWidget {
                   ),
                 ]
               ),
-              child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKy-4J0tcT5Zmt9gjr3QcBOWys0S1gvo0bj7TXLXAcwj7NRG16hiLCBcll3vHGb3UEuKU&usqp=CAU",
-              width: 100,
-              ),
+              child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKy-4J0tcT5Zmt9gjr3QcBOWys0S1gvo0bj7TXLXAcwj7NRG16hiLCBcll3vHGb3UEuKU&usqp=CAU"),
+              
             
               ),
           ),
